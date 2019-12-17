@@ -1,0 +1,45 @@
+/* グラデ */
+
+
+
+html {
+    /* Wave Color */
+    background: #59adeb;
+    background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    background-size: 350% 350%;
+    animation: waveColors 8s ease infinite;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Animation Wave Color */
+
+@-webkit-keyframes waveColors {
+    0% {
+        background-position: 0% 7%;
+    }
+    50% {
+        background-position: 100% 94%;
+    }
+    100% {
+        background-position: 0% 7%;
+    }
+}
+
+@keyframes waveColors {
+    0% {
+        background-position: 0% 7%;
+    }
+    50% {
+        background-position: 100% 94%;
+    }
+    100% {
+        background-position: 0% 7%;
+    }
+}

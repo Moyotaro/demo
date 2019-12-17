@@ -1,0 +1,83 @@
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"); */
+.typo, .list a {
+  font-size: 60px;
+  font-weight: 700;
+  /* font-family: 'Playfair Display', serif; */
+  color: #585858;
+  line-height: 1;
+  text-decoration: underline wavy #c26129;
+}
+  /* 
+.typo option, .list a option {
+  font-size: 30px;
+}  */
+/* 
+.transition {
+  transition: all .4s ease-in-out;
+} */
+
+body {
+  text-align: center;
+}
+h2 {
+    display: inline-block;
+    font-size: 60px;
+}
+
+.wrapper {
+  padding-top: 150px;
+  /* height: 100vh; */
+  /* font-size: 60px; */
+}
+
+.list {
+  display: inline-block;
+  position: relative;
+  margin-left: 6px;
+}
+.list ul {
+  text-align: left;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.list ul .active {
+  display: block;
+}
+.list li {
+  list-style: none;
+}
+.list li:first-child a {
+  color: #c26129;
+}
+.list a {
+  color: #c26129;
+  position: relative;
+}
+.list a:after {
+  position: absolute;
+  content: '';
+  height: 5px;
+  width: 0;
+  left: 0;
+  background: #c26129;
+  text-decoration: underline wavy #c26129;
+  bottom: 0;
+  transition: .7s ease-out all;
+}
+.list a:hover {
+  cursor: pointer;
+  color: #c26129;
+}
+.list a:hover:after {
+  width: 100%;
+}
+
+.placeholder {
+  cursor: pointer;
+}
+.placeholder:hover {
+  color: #888888;
+}
